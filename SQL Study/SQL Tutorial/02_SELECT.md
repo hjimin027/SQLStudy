@@ -1,4 +1,4 @@
-# SQL SELECT
+# SELECT
 
 ## Syntax
 
@@ -14,4 +14,21 @@ FROM table_name;
 
 ```sql
 SELECT * FROM Customers;
+```
+
+
+# SELECT DISTINCT
+
+해당 열에 중복값이 많은 경우, 고유값만 나열하고 싶을 때 사용.
+
+```SQL
+SELECT DISTINCT col1, col2, ...
+FROM table_name;
+```
+<a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_distinct" target="_blank">SELECT DISTINCT 예시(실행)</a>
+
+## Count Distinct
+`COUNT` 함수를 사용할 때 `DISTINCT` 키워드를 함께 사용하면, 다른 국가들의 수를 구할 수 있다.
+```sql
+SELECT COUNT(DISTINCT Country) FROM Customers;
 ```
