@@ -14,7 +14,20 @@ TOP 3 대신 TOP 50 PERCENT 등 변형 가능
 * Oracle: `FETCH FIRST n ROWS ONLY`, `ROWNUM <= n`
 
 ## `ORDER BY` 키워드 추가
+SQL Server, MS Access
 ```sql
 SELECT TOP 3 * FROM Customers
 ORDER BY CustomerName DESC;
+```
+MySQL
+```sql
+SELECT * FROM Customers
+ORDER BY CustomerName DESC
+LIMIT 3;
+```
+Oracle
+```sql
+SELECT * FROM Customers
+ORDER BY CustomerName DESC
+FETCH FIRST 3 ROWS ONLY;
 ```
