@@ -24,7 +24,7 @@ select == SELECT
 * `SELECT` : db로부터 데이터 추출
 * `UPDATE` : db에서 데이터 업데이트
 * `DELETE` : db에서 데이터 삭제
-* `INSERT INTO` : db에 새로운 데이터 추가
+* `INSERT INTO` : db에 새로운 데이터 삽입
 * `CREATE DATABASE` : 새로운 db 생성
 * `ALTER DATABASE` : db 수정
 * `CREATE TABLE` : 새로운 테이블 생성
