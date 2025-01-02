@@ -48,6 +48,12 @@ WHERE NOT condition;
 ```
 
 ## 예시
+#### NOT
+Spain에서 오지 않은 고객들
+```sql
+SELECT * FROM Customers
+WHERE NOT Country='Spain';
+```
 #### NOT LIKE
 'A'로 시작하지 않는 고객들
 ```sql
