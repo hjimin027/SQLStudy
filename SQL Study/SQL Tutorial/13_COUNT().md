@@ -25,3 +25,17 @@ WHERE Price > 20;
 SELECT COUNT(DISTINCT Price)
 FROM Products;
 ```
+
+## Alias(별칭) 사용
+`AS` 키워드 사용
+```sql
+SELECT COUNT(*) AS [Number of records]
+FROM Products
+```
+
+## GROUP BY와 사용
+```sql
+SELECT COUNT(*) AS [Number of records], CategoryID
+FROM Products
+GROUP BY CategoryID;
+```
