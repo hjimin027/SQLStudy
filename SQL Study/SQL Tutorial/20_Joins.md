@@ -9,7 +9,7 @@ INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 ```
 
 ## 종류
-* [(INNER) JOIN](): 두 테이블에서 모두 일치하는 값을 가진 레코드 반환
+* [(INNER) JOIN](#inner-join): 두 테이블에서 모두 일치하는 값을 가진 레코드 반환
 * [LEFT (OUTER) JOIN](): 왼쪽 테이블의 모든 레코드와, 거기에 매칭되는 오른쪽 테이블의 레코드를 반환
 * [RIGHT (OUTER) JOIN](): 오른쪽 테이블의 모든 레코드와, 거기에 매칭되는 왼쪽 테이블의 레코드를 반환
 * [FULL (OUTER) JOIN](): 왼쪽이나 오른쪽 둘 중 하나라도 매칭되는 레코드를 반환
