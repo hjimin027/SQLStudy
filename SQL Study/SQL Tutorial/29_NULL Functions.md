@@ -45,6 +45,8 @@ FROM Products;
 ```
 
 * Oracle: NVL(), COALESCE()
+  
+  * NVL = Null Value Logic
 ```sql
 SELECT ProductName, UnitPrice * (UnitsInStock + NVL(UnitsOnOrder, 0))
 FROM Products;
