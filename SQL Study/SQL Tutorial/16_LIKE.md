@@ -1,7 +1,8 @@
 # LIKE
 `WHERE`절 안에서 사용. 특정 패턴 탐지
 * % : 0개 이상의 글자
-* _ : 1개 이상의 글자
+* _ : 한 글자
+* 더 많은 Wildcard는 [여기](17_Wildcard.md)에
 
 ## Syntax
 ```sql
