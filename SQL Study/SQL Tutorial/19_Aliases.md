@@ -4,8 +4,8 @@
 * 해당 쿼리가 지속되는 동안만 유지
 * `AS`키워드를 사용해 생성
 
-## `AS`는 선택 사항이다
-`AS`를 생략해도 똑같은 결과가 나온다.
+## `AS`는 생략 가능
+없어도 똑같이 동작한다.
 ```sql
 SELECT CustomerID ID
 FROM Customers;
