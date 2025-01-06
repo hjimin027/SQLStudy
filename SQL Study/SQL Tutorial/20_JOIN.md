@@ -10,7 +10,7 @@ INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 
 ## 종류
 * [(INNER) JOIN](#inner-join): 두 테이블에서 모두 일치하는 값을 가진 레코드 반환
-* [LEFT (OUTER) JOIN](): 왼쪽 테이블의 모든 레코드와, 거기에 매칭되는 오른쪽 테이블의 레코드를 반환
+* [LEFT (OUTER) JOIN](#left-join): 왼쪽 테이블의 모든 레코드와, 거기에 매칭되는 오른쪽 테이블의 레코드를 반환
 * [RIGHT (OUTER) JOIN](): 오른쪽 테이블의 모든 레코드와, 거기에 매칭되는 왼쪽 테이블의 레코드를 반환
 * [FULL (OUTER) JOIN](): 왼쪽이나 오른쪽 둘 중 하나라도 매칭되는 레코드를 반환
 
@@ -22,8 +22,9 @@ INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 
 
 * * *
+
 # INNER JOIN
-두 테이블을 나란히 놓고, null값이 있는 행은 무조건 제외
+두 테이블을 결합하고, null값이 있는 행은 무조건 제외
 ## Syntax
 ```sql
 SELECT col_name(s)
@@ -43,3 +44,22 @@ FROM ((Orders
        INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
 INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
 ```
+
+* * *
+
+# LEFT JOIN
+왼쪽 테이블은 그대로, 오른쪽 테이블을 왼쪽 테이블에 맞춤
+
+## LEFT JOIN Syntax
+```sql
+SELECT col_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.col_name = table2.col_name;
+```
+이 때, table1이 왼쪽 테이블, table2이 오른쪽 테이블이 된다.
+
+![img_left_join](https://github.com/user-attachments/assets/4756e78a-753a-43ff-b9b5-ca2b6ab75013)
+
+
+* * *
