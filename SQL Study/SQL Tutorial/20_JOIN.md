@@ -11,7 +11,7 @@ INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 ## 종류
 * [(INNER) JOIN](#inner-join): 두 테이블에서 모두 일치하는 값을 가진 레코드 반환
 * [LEFT (OUTER) JOIN](#left-join): 왼쪽 테이블의 모든 레코드와, 거기에 매칭되는 오른쪽 테이블의 레코드를 반환
-* [RIGHT (OUTER) JOIN](): 오른쪽 테이블의 모든 레코드와, 거기에 매칭되는 왼쪽 테이블의 레코드를 반환
+* [RIGHT (OUTER) JOIN](#right-join): 오른쪽 테이블의 모든 레코드와, 거기에 매칭되는 왼쪽 테이블의 레코드를 반환
 * [FULL (OUTER) JOIN](): 왼쪽이나 오른쪽 둘 중 하나라도 매칭되는 레코드를 반환
 
 ![img_inner_join](https://github.com/user-attachments/assets/409850a9-0ecb-4477-9daa-14d5ba357428)
@@ -50,6 +50,8 @@ INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
 # LEFT JOIN
 왼쪽 테이블은 그대로, 오른쪽 테이블을 왼쪽 테이블에 맞춤
 
+어떤 데이터베이스에서는 `LEFT OUTER JOIN`이라고 불린다.
+
 ## LEFT JOIN Syntax
 ```sql
 SELECT col_name(s)
@@ -61,5 +63,36 @@ ON table1.col_name = table2.col_name;
 
 ![img_left_join](https://github.com/user-attachments/assets/4756e78a-753a-43ff-b9b5-ca2b6ab75013)
 
+#### 예시
+```sql
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+ORDER BY Customers.CustomerName;
+```
 
 * * *
+
+# RIGHT JOIN
+오른쪽 테이블은 그대로, 왼쪽 테이블을 왼쪽 테이블에 맞춤
+
+어떤 데이터베이스에서는 `RIGHT OUTER JOIN`이라고 불린다.
+
+## RIGHT JOIN Syntax
+```sql
+SELECT col_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.col_name = table2.col_name;
+```
+이 때, table1이 왼쪽 테이블, table2이 오른쪽 테이블이 된다.
+
+![img_right_join](https://github.com/user-attachments/assets/d0fcc39b-cc88-4c3a-a945-b193304a2f6e)
+
+#### 예시
+```sql
+SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+FROM Orders
+RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+ORDER BY Orders.OrderID;
+```
