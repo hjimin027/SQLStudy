@@ -12,17 +12,17 @@ WHERE condition1 AND condition2 AND condition3 ...;
 ## AND와 OR 결합
 괄호 사용에 주의해야 함! 다른 의미가 되어 다른 결과가 나올 수 있음
 
+#### Spain에서 왔으며, G나 R로 이름이 시작하는 모든 고객
 ```sql
 SELECT * FROM Customers
 WHERE Country='Spain' AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');
 ```
-↑ Spain에서 왔으며, G나 R로 이름이 시작하는 모든 고객
 
+#### Spain에서 왔으며 G로 시작하거나, R로 시작하는 모든 고객
 ```sql
 SELECT * FROM Customers
 WHERE Country='Spain' AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';
 ```
-↑ Spain에서 왔으며 G로 시작하거나, R로 시작하는 모든 고객
 
 
 # OR 연산자
