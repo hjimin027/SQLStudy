@@ -36,7 +36,7 @@ EXEC sp_rename 'table_name.old_name', 'new_name', 'COLUMN';
 ```
 
 ## 데이터타입 변경/수정
-SQL 종류마다 다르다.
+데이터베이스 종류마다 다르다.
 
 #### SQL Server/MS Access:
 ```sql
