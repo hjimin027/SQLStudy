@@ -1,6 +1,6 @@
 # NULL Functions
 
-###### SQL 종류마다 다름..
+###### 데이터베이스 종류마다 다름..
 
 Products 테이블이 다음과 같다고 하자.
 |P_Id|ProductName|UnitPrice|UnitsInStock|UnitsOnOrder|
