@@ -1,5 +1,22 @@
 출처: w3schools
 
+# 목차
+### 기본
+1. [기본 syntax](01_Syntax.md) - 핵심 sql 명령들
+2. [`SELECT`](02_SELECT.md) - `SELECT`, `SELECT DISTINCT`
+3. [특정 조건 - `WHERE`](03_WHERE.md)
+4. [정렬](04_ORDER-BY.md) - `ORDER BY`, `ASC`/`DESC`
+5. [`AND/OR/NOT`](05_AND_OR_NOT.md) - `WHERE`문에서 사용
+
+### 레코드
+6. [새로운 레코드 삽입](06_INSERT-INTO.md) - `INSERT INTO`─`VALUES`
+7. [NULL](07_NULL.md) - NULL 확인: `IS NULL`. 비교연산자(=, >, <>) 사용 불가능
+8. [레코드 수정](08_UPDATE.md) - `UPDATE`─`SET`
+
+
+
+
+
 # SQL Intro
 
 ## SQL은 무엇인가?
@@ -21,7 +38,7 @@ SQL은 ANSI/ISO standard이지만, 버전마다 다름
 ...이 필요하다.
 
 
-# RDBMS
+## RDBMS
 RDBMS = Relational Database Management System
 
 RDBMS의 데이터는 Table이라는 데이터베이스 객체에 저장됨
